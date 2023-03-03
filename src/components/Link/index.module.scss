@@ -1,0 +1,13 @@
+.link {
+  color: var(--blue-50);
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+  border-bottom: 1px solid transparent;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  &:hover {
+    border-color: var(--blue-50);
+  }
+}

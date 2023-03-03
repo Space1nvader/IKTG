@@ -1,0 +1,48 @@
+.questionModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: var(--gray-90);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.container {
+  box-sizing: border-box;
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40rem;
+  height: 40rem;
+  max-width: 100%;
+  box-shadow: var(--shadow-medium);
+  border-radius: 10px;
+  max-height: 100%;
+}
+.content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.controls {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+.field {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.closeButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
