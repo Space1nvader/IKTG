@@ -19,3 +19,9 @@
   font-size: 18px;
   color: var(--color-accent);
 }
+
+@media screen and (max-width: 1024px) {
+  .fullname {
+    display: none;
+  }
+}

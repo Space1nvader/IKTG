@@ -1,0 +1,36 @@
+.about {
+  position: absolute;
+  bottom: 1rem;
+  padding-right: 2rem;
+
+  left: 16px;
+  &:hover > .content {
+    display: block;
+  }
+}
+
+.trigger {
+  color: var(--gray-50);
+  font-size: 14px;
+}
+.content {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 40rem;
+  max-width: 90vw;
+  bottom: 0;
+}
+.text {
+  background-color: var(--background-primary);
+  font-size: 14px;
+  line-height: 1.4;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--border-color-hover);
+  margin-left: 4rem;
+  & > a {
+    color: var(--color-accent);
+    text-decoration: underline;
+  }
+}

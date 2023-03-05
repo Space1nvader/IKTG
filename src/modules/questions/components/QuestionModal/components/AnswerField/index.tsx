@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import { useDispatch, useSelector } from 'react-redux';
-import FieldLabel from 'components/Fields/components/Label';
+// import FieldLabel from 'components/Fields/components/Label';
 import TextField from 'components/Fields/TextField';
 import { setAnswerAction } from 'store/answers/actions';
 import { getAnswersSelector } from 'store/answers/selectors';
@@ -55,21 +55,30 @@ const QuestionAnswerField: IFC = () => {
     return undefined;
   }
 
+  useEffect(() => {
+    const delayDebounceFn = setTimeout(() => {
+      if (fieldValue.length > 3) {
+        searchGamesRequest(fieldValue);
+      } else if (data.length) {
+        setData([]);
+      }
+    }, 300);
+
+    return () => {
+      clearTimeout(delayDebounceFn);
+    };
+  }, [fieldValue]);
+
   const onSubmitHandler = (event: React.SyntheticEvent) => {
     event.preventDefault();
     onAnswerHandler(fieldValue);
   };
+
   const onFieldChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
 
     setFieldValue(value);
     setAnswerLabel('');
-
-    if (value.length > 2) {
-      searchGamesRequest(value);
-    } else if (data.length) {
-      setData([]);
-    }
   };
 
   const fieldAnsweredClassName = (() => {
@@ -100,11 +109,11 @@ const QuestionAnswerField: IFC = () => {
           onChange={onFieldChange}
           value={isAnswered ? question.name : fieldValue}
         />
-        {typeof isAnswered === 'boolean' && (
+        {/* {typeof isAnswered === 'boolean' && (
           <FieldLabel className={`${s.label} ${isAnswered ? s.valid : s.invalid}`} name="answer">
             {answerLabel}
           </FieldLabel>
-        )}
+        )} */}
       </form>
       <div className={s.content}>
         {isAnswered ? (

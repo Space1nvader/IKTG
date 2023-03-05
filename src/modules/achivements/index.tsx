@@ -16,7 +16,7 @@ const Achievement = () => {
     setCurrentAchievement(value);
     setTimeout(() => {
       setCurrentAchievement(null);
-    }, 5000);
+    }, 7000);
   };
 
   const setAchievementHandler = () => {
@@ -40,7 +40,9 @@ const Achievement = () => {
   const currentAchievementData = currentAchievement ? achievements[currentAchievement] : null;
 
   return currentAchievement && currentAchievementData ? (
+    // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
     <img
+      onClick={() => setCurrentAchievement(null)}
       className={s.achievement}
       src={currentAchievementData.image}
       alt={currentAchievementData.title}

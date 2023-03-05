@@ -1,5 +1,6 @@
 import React from 'react';
-import Aside from 'components/Aside';
+// import Aside from 'components/Aside';
+import About from 'components/About';
 import Header from 'components/Header';
 import Questions from 'modules/questions';
 import s from './index.module.scss';
@@ -12,7 +13,8 @@ const QuestionsPage = () => (
         <Questions />
       </div>
     </div>
-    <Aside />
+    <About />
+    {/* <Aside /> */}
   </div>
 );
 

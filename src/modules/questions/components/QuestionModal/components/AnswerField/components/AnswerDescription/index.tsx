@@ -6,7 +6,7 @@ const AnswerDescription: IFC = (props) => {
 
   return (
     <div className={s.description}>
-      <h5 className={s.title}>Success</h5>
+      <h5 className={s.title}>Correct!</h5>
       {children}
     </div>
   );

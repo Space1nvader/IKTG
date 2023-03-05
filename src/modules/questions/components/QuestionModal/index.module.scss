@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   padding: 2rem;
+  z-index: 2;
   justify-content: center;
   box-sizing: border-box;
   flex-direction: column;
@@ -21,7 +22,7 @@
 
 .content {
   display: flex;
-  width: 50rem;
+  width: 45rem;
   max-width: 100%;
   align-items: center;
   flex-wrap: wrap;

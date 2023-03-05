@@ -20,15 +20,19 @@ const QuestionControls = () => {
 
   return (
     <div className={s.controls}>
-      <Button disabled>Share</Button>
-
       <Button
-        className={`${s.button} ${isAnswered ? s.answered : ''}`}
+        className={s.button}
+        disabled={isAnswered}
         onClick={setNextGameHandler}
         data-text="Skip"
       >
-        Next game
+        Skip
       </Button>
+      {isAnswered && (
+        <Button className={`${s.button} ${s.answered}`} onClick={setNextGameHandler}>
+          Next game
+        </Button>
+      )}
     </div>
   );
 };

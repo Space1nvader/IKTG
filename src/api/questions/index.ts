@@ -12,10 +12,11 @@ export const questions: Question[] = [
   {
     name: 'Minecraft',
     type: 'audio',
+    content: 'Музыку из какой игры вы слышите?',
     message: 'Лучше этой игры - только копатель онлайн'
   },
   {
-    name: 'Diablo III',
+    name: 'Diablo',
     type: 'text',
     data: '"Постой и послушай"',
     message:
@@ -30,6 +31,7 @@ export const questions: Question[] = [
   {
     name: 'Crysis',
     type: 'video',
+    data: 'Что за игра показана на видео?',
     message: 'До сих пор не тянет'
   },
   {
@@ -41,7 +43,7 @@ export const questions: Question[] = [
   {
     name: 'Ori and the blind forest',
     type: 'picture',
-    data: 'https://www.denofgeek.com/wp-content/uploads/2020/02/2015-03-31_00024.jpg',
+    data: 'https://sun9-56.userapi.com/impg/6tP4cuU9OpBCQ9ccJS123Gx_UGz4_VqxQAZlLQ/DbjGubByCz8.jpg?size=2192x1286&quality=96&sign=fee441512db2a54f6c9fb617bc3adc37&type=album',
     message:
       'Ori and the Blind Forest представляет собой красочный экшен-платфомер. Игра повествует об истории юного сироты, которому предначертана судьба героя. Отличительные особенности — непередаваемая атмосфера и отличный саундтрек.'
   },
@@ -79,12 +81,18 @@ export const questions: Question[] = [
     message: 'Карточка? Хуй тебе в нос а не карточка'
   },
   {
-    name: 'Overwatch',
+    name: 'Genshin impact',
     type: 'picture',
-    data: 'https://sun9-44.userapi.com/impg/f3XjViY78ulUfcl7jqUydtCWuC5rTdwbUyzfjA/wgYU_xnjNNs.jpg?size=2560x1576&quality=96&sign=1ef9b8caa9bcfdd5760d11d8d7bc8904&type=album',
-    message: 'Дамы и господа, заводите моторы!'
+    data: 'https://sun9-68.userapi.com/impg/nOH2FPRhXJI4e_k2R90fZji30yJrgemDxiSKFQ/atOY4QDXkF8.jpg?size=2560x1560&quality=96&sign=b3469eca66637b9f565adac05b4a9eeb&type=album',
+    message: 'Достойная игра для достойных мужчин'
   },
 
+  {
+    name: 'Cyberpunk 2077',
+    type: 'audio',
+    message:
+      'Знаешь, Ви, походу над тобой попросту издеваются. Спорим, все эти точки на карте складываются в один огромный философический х*й?'
+  },
   {
     name: 'Need For Speed: Underground 2',
     type: 'picture',
@@ -95,7 +103,7 @@ export const questions: Question[] = [
   {
     name: 'World of Warcraft',
     type: 'picture',
-    data: 'https://preview.redd.it/oise4ur2a1h01.png?auto=webp&s=c6bcb3e8e1b39d1bb416b24b2b7a7a727eb392e2',
+    data: 'https://sun9-47.userapi.com/impf/c624825/v624825705/dc90/PHwsIQarc-k.jpg?size=1920x1080&quality=96&sign=c847333782caa27baf8e7a1a1b9819af&type=album',
     message: 'Небо над долиной призрачной луны(Warlords of draenor)'
   },
   {
@@ -108,7 +116,7 @@ export const questions: Question[] = [
     name: 'Dota 2',
     type: 'picture',
     data: 'https://sun9-12.userapi.com/impg/iVnSLGf3_kbC5txfX4AIyG8GYek5S2UcCSSMMA/BEjiezgpT3w.jpg?size=1286x794&quality=95&sign=eef11e1a42d6aa34eec254ade772828a&type=album',
-    message: 'LOL > Dota'
+    message: 'LOL > DOTA'
   },
   {
     name: 'Fallout 4',
@@ -116,19 +124,31 @@ export const questions: Question[] = [
     data: ' В 1945 году мой прапрадед служил в армии и гадал, вернётся ли он домой к жене и сыну, которого он ещё ни разу не видел. Его желание сбылось, когда США завершили Вторую мировую войну, сбросив на Хиросиму и Нагасаки атомные бомбы. Мир замер в ожидании ядерного апокалипсиса. Но случилось чудо: мы стали использовать атомную энергию не в военных, а в мирных целях. То, что раньше казалось уделом фантастов: бытовые роботы, машины на термоядерном топливе, портативные компьютеры — всё это стало реальностью. Но уже в XXI веке американская мечта рассеялась как дым. Годы бездумного потребления привели к истощению запасов всех природных ресурсов. Мир затрещал по швам. Сейчас 2077 год. Человечество стоит на пороге новой мировой войны. И мне страшно. Страшно за себя, за жену, за маленького сына. За время, проведённое в армии, я кое что понял...',
     message: 'Война всегда одна'
   },
+
   {
     name: 'Dark Souls III',
     type: 'picture',
-    data: 'https://steamuserimages-a.akamaihd.net/ugc/941709786935031715/CCC2837E14204E96B7653B3522A18D4FE4DB5F2B/?imw=910&imh=1024&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true',
-    message:
-      'Анор Лондо (англ. Anor Londo) — локация в игре Dark Souls. Легендарный заброшенный город Богов. Анор Лондо находится в горах, над Крепостью Сена. Высокие стены, окружающие город, можно увидеть практически отовсюду'
+    data: 'https://i1.wp.com/gameplaying.info/wp-content/uploads/2016/11/dark-souls-3-sirris-quest.jpg?fit=854%2C480&ssl=1',
+    message: 'Да есть там сюжет!'
   },
+  {
+    name: 'FINAL FANTASY XV',
+    type: 'picture',
+    data: 'https://sun9-69.userapi.com/impg/0BKaGo0boBdtlU7z7OloNVUUz6TA909eoFVPFw/YNhQGrrG6Vo.jpg?size=1658x884&quality=96&sign=394b7d3a2d50fefd57f84a616fc62161&type=album',
+    message: 'Вы может и не играли в эту игру, но Синди ты точно узнаешь, верно?'
+  },
+
   {
     name: 'Serious Sam',
     type: 'audio',
     content: 'Вот и думай',
     message:
       'Серия Serious Sam давно стала классикой и считается гордостью ПК (хотя постоянно пыталась перебраться на консольный рынок). Её игровой процесс завораживает благодаря большому количеству разнообразных монстров, трудных передряг и харизматичному главному герою, в честь кого игра и получила своё название.'
+  },
+  {
+    name: 'Among Us',
+    type: 'audio',
+    message: 'А ты там скачивал или загружал файлы?'
   },
   {
     name: 'Portal 2',
@@ -225,13 +245,23 @@ export const questions: Question[] = [
     data: 'https://sun9-9.userapi.com/impg/Dwh8AykYBMpElZ4M-PK_2f0v-JV4hIKQdPPm-g/Ks8kQEWBHhk.jpg?size=1378x760&quality=96&sign=1041e22b03c93ee3a35294c38f5ff02b&type=album',
     message: 'Кстати, на википедии написано, что это автосимулятор'
   },
+  {
+    name: 'The Elder Scrolls V: Skyrim',
+    type: 'audio',
+    message: 'Я украл твой сладкий рулет'
+  },
+  {
+    name: 'Fortnite',
+    type: 'picture',
+    data: 'https://fortnitegames.ru/wp-content/uploads/2020/08/stroitelstvo-fortnajt1.jpg',
+    message: 'Да он не для школьников! Просто у него аудитория такая.'
+  },
 
   {
     name: 'Старый хуй',
     type: 'text',
     content: 'Продолжи фразу',
     data: 'Ламберт, Ламберт - хер моржовый! Ламберт, Ламберт...',
-    message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, eum fugit at quas illum ex maxime natus, culpa cum dicta repellendus blanditiis nulla officiis voluptatum non voluptate delectus debitis facilis!'
+    message: 'Ну че малютки все еще бегаете за Йеннифер?'
   }
 ];

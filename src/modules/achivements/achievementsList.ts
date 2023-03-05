@@ -4,7 +4,11 @@ export const achievements = {
     image:
       'https://sun9-71.userapi.com/impg/Q-PTDbVDeaxMP23clO94tTvRJz4X2XG1sMlk_g/iMRtYe_OPpY.jpg?size=1098x170&quality=96&sign=5446a7f154ab42c6f1c9464ded18e096&type=album'
   },
-
+  '30': {
+    title: 'Угадайте 30 игр!',
+    image:
+      'https://sun9-53.userapi.com/impg/0ud90qKTa7wBU7qDsw84_mCtd53kGGXU7cnBxg/xt2gdZoju7Q.jpg?size=1096x170&quality=96&sign=12849b3445ef51dc8e2425ae30fa2d91&type=album'
+  },
   all: {
     title: 'Угадайте все игры!',
     image:

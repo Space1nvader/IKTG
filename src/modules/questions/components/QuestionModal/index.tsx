@@ -6,10 +6,10 @@ import { currentQuestionSelector } from 'store/questions/selectors';
 import QuestionAnswerField from './components/AnswerField';
 import QuestionControls from './components/Controls';
 import QuestionContent from './components/QuestionContent';
-import AudioQuestion from './components/questionTypes/AudioQuestion';
-import PictureQuestion from './components/questionTypes/PictureQuestion';
-import TextQuestion from './components/questionTypes/TextQuestion';
-import VideoQuestion from './components/questionTypes/VideoQuestion';
+import AudioQuestion from '../../../../questionTypes/AudioQuestion';
+import PictureQuestion from '../../../../questionTypes/PictureQuestion';
+import TextQuestion from '../../../../questionTypes/TextQuestion';
+import VideoQuestion from '../../../../questionTypes/VideoQuestion';
 import s from './index.module.scss';
 
 const QUESTION_TYPE_MAP = {

@@ -9,7 +9,9 @@ const Header = () => {
 
   return (
     <div className={s.header}>
-      <h4 className={s.title}>IKTG - I KNOW THIS GAME</h4>
+      <h4 className={s.title}>
+        IKTG <span className={s.fullname}>- I KNOW THIS GAME</span>
+      </h4>
       <div className={s.counter}>
         {answersArray.length}/{questions.length}
       </div>
