@@ -1,25 +1,28 @@
 {
   "files": {
-    "main.css": "/IKTG/static/css/main.d665c636.css",
-    "main.js": "/IKTG/static/js/main.a2bbd487.js",
+    "main.css": "/IKTG/static/css/main.d61a0092.css",
+    "main.js": "/IKTG/static/js/main.bad0b77c.js",
     "static/media/uncharted.mp4": "/IKTG/static/media/uncharted.b8842b1c9051089b7e13.mp4",
     "static/media/laNuar.mp4": "/IKTG/static/media/laNuar.319bd1aa44fd5be4f383.mp4",
     "static/media/crysis.mp4": "/IKTG/static/media/crysis.6c4cc403b92988d41653.mp4",
     "static/media/farcry.mov": "/IKTG/static/media/farcry.dc578d62f3c05da5106f.mov",
     "static/media/boshy.mp4": "/IKTG/static/media/boshy.7edd09d4ec872fa8def9.mp4",
     "static/media/minecraft.mp3": "/IKTG/static/media/minecraft.f5dc3b2d426b13e0fb3c.mp3",
+    "static/media/cyberpunk.mp3": "/IKTG/static/media/cyberpunk.11b53fa76e81405a63c1.mp3",
+    "static/media/amongAs.mp3": "/IKTG/static/media/amongAs.0f2f6ab8c31883f33599.mp3",
     "static/media/metalGear.mp3": "/IKTG/static/media/metalGear.fdf855d19f48dbff697e.mp3",
     "static/media/hearthstone.mp3": "/IKTG/static/media/hearthstone.6acf4225467d2f12f929.mp3",
     "static/media/viceCity.mp3": "/IKTG/static/media/viceCity.9c9e42a5510e1bd52469.mp3",
+    "static/media/skyrim.mp3": "/IKTG/static/media/skyrim.8aec15b73e557bf56154.mp3",
     "static/media/seriousSam.mp3": "/IKTG/static/media/seriousSam.22172b37f3f5dae2c94d.mp3",
     "static/media/postal2.mp3": "/IKTG/static/media/postal2.d71df6f699daf1e67422.mp3",
     "static/media/halflife2.mp3": "/IKTG/static/media/halflife2.bbc93348e67e38351a01.mp3",
     "index.html": "/IKTG/index.html",
-    "main.d665c636.css.map": "/IKTG/static/css/main.d665c636.css.map",
-    "main.a2bbd487.js.map": "/IKTG/static/js/main.a2bbd487.js.map"
+    "main.d61a0092.css.map": "/IKTG/static/css/main.d61a0092.css.map",
+    "main.bad0b77c.js.map": "/IKTG/static/js/main.bad0b77c.js.map"
   },
   "entrypoints": [
-    "static/css/main.d665c636.css",
-    "static/js/main.a2bbd487.js"
+    "static/css/main.d61a0092.css",
+    "static/js/main.bad0b77c.js"
   ]
 }
