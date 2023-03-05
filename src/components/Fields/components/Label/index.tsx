@@ -6,7 +6,7 @@ import s from './index.module.scss';
 interface FieldLabelProps {
   name?: string;
   tooltip?: JSX.Element | string;
-  onClick?: () => any;
+  onClick?: () => void;
 }
 
 /**
@@ -16,7 +16,7 @@ interface FieldLabelProps {
  * @returns JSX.Element
  */
 const FieldLabel: IFC<FieldLabelProps> = (props) => {
-  const { name, tooltip, children, className, ...other } = props;
+  const { name, tooltip, children, className = '', ...other } = props;
 
   return (
     <label className={`${s.label} ${className}`} htmlFor={name} {...other}>

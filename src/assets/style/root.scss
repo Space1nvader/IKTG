@@ -1,8 +1,17 @@
 @import './theme/dark.scss';
 @import './theme/light.scss';
 @import './palette.scss';
+@import './keyframes.scss';
 @import './fonts.scss';
 
 :root{
-    --shadow-medium: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    --color-accent: var(--blue-60);
+    --text-primary: #fff;
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    --background-primary: #121212;
+    --background-secondary: #262626;
+    --divider-color: rgba(255, 255, 255, 0.12);
+    --border-color: transparent;
+    --border-color-focus: var(--gray-30);
+    --border-color-hover: rgba(152, 152, 152, 0.488);
 }

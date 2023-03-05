@@ -17,7 +17,7 @@ a {
 body {
   font-family: var(--font);
   cursor: default;
-  background-color: var(--gray-90);
+  background-color: var(--background-primary);
   color: #fff;
 }
 section {
@@ -78,21 +78,23 @@ h2 {
 h3 {
   font-size: 3rem;
   letter-spacing: -0.01em;
+  color: var(--color-accent);
 }
 h4 {
   font-size: 2.125rem;
   font-weight: 600;
+  color: var(--color-accent);
 }
 h5 {
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.5;
-  color: var(--blue-100);
+  color: var(--color-accent);
 }
 h6 {
   font-size: 1.25rem;
   letter-spacing: 0.0075em;
-  color: var(--blue-100);
+  color: var(--color-accent);
 }
 @media screen and (max-width: 1024px) {
   h4 {

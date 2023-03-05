@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import classNames from 'classnames';
 import FieldError from '../components/Error';
 import FieldLabel from '../components/Label';
@@ -31,7 +31,7 @@ const TextField: IFC<IFieldProps> = (props) => {
     type = 'text',
     label,
     error,
-    size = 'medium',
+    size = 'large',
     tooltip,
     icon,
     id,
@@ -42,6 +42,11 @@ const TextField: IFC<IFieldProps> = (props) => {
   } = props;
 
   const [fieldValue, setFieldValue] = useState<string | number>(value as string | number);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    setFieldValue(value as string | number);
+  }, [value]);
 
   const onChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
     const targetValue = event.target.value;
@@ -60,6 +65,7 @@ const TextField: IFC<IFieldProps> = (props) => {
         </FieldLabel>
       )}
       <input
+        ref={inputRef}
         className={inputClassList}
         value={fieldValue}
         name={name}

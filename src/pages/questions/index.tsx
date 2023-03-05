@@ -5,12 +5,14 @@ import Questions from 'modules/questions';
 import s from './index.module.scss';
 
 const QuestionsPage = () => (
-  <div className="questionsPage">
-    <Header />
+  <div className={s.page}>
     <div className={s.content}>
-      <Questions />
-      <Aside />
+      <Header />
+      <div className={s.questions}>
+        <Questions />
+      </div>
     </div>
+    <Aside />
   </div>
 );
 

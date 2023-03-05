@@ -1,16 +1,22 @@
 .button {
   position: relative;
-  background-color: var(--gray-20);
-  color: var(--text-basic);
+  color: var(--text-primary);
   transition: all 0.2s;
-  border-radius: 4px;
+  background-color: var(--background-secondary);
+  border-radius: 6px;
   width: auto;
   font-weight: 400;
   font-size: 16px;
   display: flex;
   align-items: center;
+  border: 1px solid var(--border-color);
   &:not(:disabled):not(.active):hover {
-    background-color: var(--blue-10);
+    border-color: var(--border-color-hover);
+  }
+  &:disabled {
+    pointer-events: none;
+    color: var(--gray-50);
+    background-color: var(--gray-100);
   }
 }
 .active {

@@ -26,7 +26,7 @@ export interface IButtonComponent extends Omit<IButtonProps, 'children'> {
 const Button: IFC<IButtonComponent> = (props) => {
   const {
     children,
-    size = 'medium',
+    size = 'large',
     type = 'button',
     active = false,
     className = '',

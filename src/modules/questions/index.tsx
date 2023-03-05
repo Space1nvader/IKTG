@@ -1,62 +1,64 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Question, questions } from 'api/questions';
+import { getAnswersSelector } from 'store/answers/selectors';
+import {
+  resetCurrentQuestionAction,
+  resetNextQuestionAction,
+  setCurrentQuestionAction,
+  setNextQuestionAction
+} from 'store/questions/actions';
+import { currentQuestionSelector } from 'store/questions/selectors';
 import GamePoint from './components/GamePoint';
-import QuestionModal, { QuestionType } from './components/QuestionModal';
+import QuestionModal from './components/QuestionModal';
 import s from './index.module.scss';
 
-export type Question = {
-  name: string;
-  type: QuestionType;
-  content: string;
-  data?: string;
-};
-const mok: Question[] = [
-  {
-    name: 'portal 2',
-    type: 'picture',
-    content: '',
-    data: 'https://www.nme.com/wp-content/uploads/2020/07/072020-Portal-2-Valve.jpeg'
-  },
-  {
-    name: 'por',
-    type: 'text',
-    content: '',
-    data: 'https://www.nme.com/wp-content/uploads/2020/07/072020-Portal-2-Valve.jpeg'
-  },
-  {
-    name: 'portal 4',
-    type: 'audio',
-    content: '',
-    data: 'https://www.nme.com/wp-content/uploads/2020/07/072020-Portal-2-Valve.jpeg'
-  },
-  {
-    name: 'portal 3',
-    type: 'video',
-    content: '',
-    data: 'Uva19TXOi8o'
-  }
-];
-
 const Questions = () => {
-  const [currentQuestion, setCurrentQuestion] = useState<Question | undefined>(undefined);
+  const currentQuestion = useSelector(currentQuestionSelector);
+  const dispatch = useDispatch();
+  const answers = useSelector(getAnswersSelector);
 
   const openQuestion = (game: Question) => () => {
-    setCurrentQuestion(game);
+    dispatch(setCurrentQuestionAction(game));
   };
 
+  useEffect(() => {
+    if (currentQuestion.name) {
+      const index = questions.indexOf(currentQuestion);
+
+      const nextQuestions = questions.slice(index + 1);
+      // Находим первый вопрос на который не дели ответ
+      const nextQuestion = nextQuestions.find((question) => !answers[question.name]);
+
+      if (nextQuestion) {
+        dispatch(setNextQuestionAction(nextQuestion));
+      } else {
+        dispatch(resetNextQuestionAction());
+      }
+    }
+  }, [currentQuestion.name]);
+
   const closeModalHandler = () => {
-    if (currentQuestion) setCurrentQuestion(undefined);
+    dispatch(resetCurrentQuestionAction());
   };
 
   return (
     <div className={s.questions}>
-      {mok.map((game, index) => (
-        <GamePoint key={game.name} onClick={openQuestion(game)}>
-          {index + 1}
-        </GamePoint>
-      ))}
-      {!!currentQuestion && (
-        <QuestionModal onClose={closeModalHandler} question={currentQuestion} />
-      )}
+      {questions.map((game, index) => {
+        const isAnswered = answers[game.name];
+
+        return (
+          <GamePoint
+            key={game.name}
+            title={isAnswered ? game.name : ''}
+            answered={isAnswered}
+            onClick={openQuestion(game)}
+          >
+            {index + 1}
+          </GamePoint>
+        );
+      })}
+      {!!currentQuestion.name && <QuestionModal onClose={closeModalHandler} />}
     </div>
   );
 };

@@ -1,9 +1,15 @@
+import React from 'react';
+
 export declare global {
   /**
    * @param className - string;
    * @param style - React.CSSProperties
    */
-  type ExtendedFC = { className?: string; style?: React.CSSProperties };
+  type ExtendedFC = {
+    children?: React.ReactNode | string;
+    className?: string;
+    style?: React.CSSProperties;
+  };
   /**
    * Функциональный компонент React
    * @param className - string;

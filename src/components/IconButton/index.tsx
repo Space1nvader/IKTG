@@ -17,7 +17,7 @@ interface IconButtonProps extends IButtonProps {
  *  @param active - boolean
  */
 const IconButton: IFC<IconButtonProps> = (props) => {
-  const { children, size = 'medium', className = '', type = 'button', ...other } = props;
+  const { children, size = 'large', className = '', type = 'button', ...other } = props;
 
   return (
     // eslint-disable-next-line react/button-has-type
