@@ -5,6 +5,11 @@
   position: relative;
   display: block;
 }
+@media screen and (max-width: 1024px) {
+  .field {
+    height: 35vh;
+  }
+}
 .input {
   width: 100%;
   margin-bottom: 8px;

@@ -27,6 +27,9 @@ const QuestionAnswerField: IFC = () => {
     setFieldValue('');
     setAnswerLabel('');
     setData([]);
+    setTimeout(() => {
+      setData([]);
+    }, 300);
   }, [question.name]);
 
   const onAnswerHandler = (answer: string) => {
