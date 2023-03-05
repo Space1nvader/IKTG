@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import IconButton from 'components/IconButton';
 import { Icons } from 'components/Icons';
@@ -26,13 +26,6 @@ const QuestionModal: IFC<{ onClose: () => void }> = (props) => {
 
   const question = useSelector(currentQuestionSelector);
   const { type } = question;
-  useEffect(() => {
-    document.body.style.overflow = 'hidden';
-
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, []);
 
   return (
     <div className={s.questionModal}>
