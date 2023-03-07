@@ -65,7 +65,7 @@
     max-width: 20rem;
     margin-bottom: 1rem;
     width: calc((100% - 5rem) / 5);
-    &:not(:nth-child(5n)) {
+    &:not(:nth-of-type(5n)) {
       margin-right: calc(5rem / 4);
     }
   }
