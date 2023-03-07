@@ -28,3 +28,10 @@
     border-bottom: 1px solid var(--gray-90);
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .gameButton {
+    padding: 8px 6px;
+    font-size: 13px;
+  }
+}

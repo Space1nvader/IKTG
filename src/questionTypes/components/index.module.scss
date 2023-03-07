@@ -3,3 +3,9 @@
   text-align: center;
   width: 100%;
 }
+
+@media screen and (max-width: 1024px) {
+  .title {
+    margin-bottom: 1rem;
+  }
+}

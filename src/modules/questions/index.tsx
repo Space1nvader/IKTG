@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Question, questions } from 'api/questions';
+import Checkbox from 'components/Fields/Checkbox';
 import { getAnswersSelector } from 'store/answers/selectors';
 import {
   resetCurrentQuestionAction,
@@ -15,6 +16,7 @@ import s from './index.module.scss';
 
 const Questions = () => {
   const currentQuestion = useSelector(currentQuestionSelector);
+  const [isHiddenAnswers, setHiddenAnswers] = useState(false);
   const dispatch = useDispatch();
   const answers = useSelector(getAnswersSelector);
 
@@ -42,15 +44,30 @@ const Questions = () => {
     dispatch(resetCurrentQuestionAction());
   };
 
+  const changeAnswersVisibility = (event: React.ChangeEvent<HTMLInputElement>) => {
+    console.log(event.target.checked);
+
+    setHiddenAnswers(event.target.checked);
+  };
+
   return (
     <div className={s.questions}>
+      <Checkbox
+        value={isHiddenAnswers}
+        className={s.checkbox}
+        name="visible"
+        onChange={changeAnswersVisibility}
+      >
+        Скрыть ответы
+      </Checkbox>
       {questions.map((game, index) => {
         const isAnswered = answers[game.name];
 
         return (
           <GamePoint
+            type={game.type}
             key={game.name}
-            title={isAnswered ? game.name : ''}
+            title={!isHiddenAnswers && window.innerWidth > 1025 && isAnswered ? game.name : ''}
             answered={isAnswered}
             onClick={openQuestion(game)}
           >

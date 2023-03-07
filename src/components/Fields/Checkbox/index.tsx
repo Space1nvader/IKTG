@@ -5,8 +5,9 @@ import FieldError from '../components/Error';
 import { IFieldProps } from '../TextField';
 import s from './index.module.scss';
 
-export interface ICheckboxProps extends Omit<IFieldProps, 'value'> {
+export interface ICheckboxProps extends Omit<IFieldProps, 'value' | 'name'> {
   value?: boolean;
+  name: string;
 }
 const Checkbox: IFC<ICheckboxProps> = (props) => {
   const {
@@ -42,7 +43,7 @@ const Checkbox: IFC<ICheckboxProps> = (props) => {
 
       <label className={s.label} htmlFor={name}>
         <div className={s.icon}>
-          <Icons.Close />
+          <Icons.Close height="20" width="20" />
         </div>
         {children || label}
       </label>

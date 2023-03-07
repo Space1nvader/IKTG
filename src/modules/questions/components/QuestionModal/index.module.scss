@@ -35,7 +35,15 @@
 }
 
 .closeButton {
+  z-index: 2;
   position: absolute;
   top: 2rem;
   right: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .closeButton {
+    top: 1rem;
+    right: 1rem;
+  }
 }

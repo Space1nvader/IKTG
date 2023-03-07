@@ -1,9 +1,12 @@
 import React from 'react';
 import Button from 'components/Button';
+import { QuestionType } from '../QuestionModal';
 import s from './index.module.scss';
 
-const GamePoint: IFC<{ answered?: boolean } & IButtonProps> = (props) => {
-  const { children, answered, ...other } = props;
+const GamePoint: IFC<{ answered?: boolean; type: QuestionType } & Omit<IButtonProps, 'type'>> = (
+  props
+) => {
+  const { children, type, title, answered, ...other } = props;
 
   const pointAnsweredClassName = (() => {
     if (answered === true) {
@@ -20,8 +23,11 @@ const GamePoint: IFC<{ answered?: boolean } & IButtonProps> = (props) => {
   const pointClassList = `${s.gamePoint} ${pointAnsweredClassName}`;
 
   return (
-    <Button className={pointClassList} {...other}>
-      {children}
+    <Button className={pointClassList} title={title} {...other}>
+      <span className={s.name} data-name={title || children}>
+        {children}
+      </span>
+      <span className={s.type}>{type}</span>
     </Button>
   );
 };

@@ -67,3 +67,6 @@ export const POSITIVE_MESSAGES = [
   'Зачем нужно жрать капусту, если есть картошка?',
   'Ты молодчага'
 ];
+
+export const isSafari =
+  /^((?!chrome|android).)*safari/i.test(navigator.userAgent) && window.innerWidth < 1024;
