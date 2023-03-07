@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/IKTG/static/css/main.4c890c5f.css",
+    "main.css": "/IKTG/static/css/main.9f46dd6f.css",
     "main.js": "/IKTG/static/js/main.f194ecd1.js",
     "static/media/uncharted.mp4": "/IKTG/static/media/uncharted.b8842b1c9051089b7e13.mp4",
     "static/media/laNuar.mp4": "/IKTG/static/media/laNuar.319bd1aa44fd5be4f383.mp4",
@@ -18,11 +18,11 @@
     "static/media/postal2.mp3": "/IKTG/static/media/postal2.d71df6f699daf1e67422.mp3",
     "static/media/halflife2.mp3": "/IKTG/static/media/halflife2.bbc93348e67e38351a01.mp3",
     "index.html": "/IKTG/index.html",
-    "main.4c890c5f.css.map": "/IKTG/static/css/main.4c890c5f.css.map",
+    "main.9f46dd6f.css.map": "/IKTG/static/css/main.9f46dd6f.css.map",
     "main.f194ecd1.js.map": "/IKTG/static/js/main.f194ecd1.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c890c5f.css",
+    "static/css/main.9f46dd6f.css",
     "static/js/main.f194ecd1.js"
   ]
 }
