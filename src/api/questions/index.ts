@@ -236,7 +236,7 @@ export const questions: Question[] = [
   {
     name: 'PlayerUnknown',
     type: 'picture',
-    data: 'https://pbs.twimg.com/media/DVSVvIeVAAABXTO?format=jpg&name=large',
+    data: 'https://sun9-46.userapi.com/impg/Ae16OW1aHugsKkp_LngU8g52_D89-yD30MB8Tg/nh2tUTzXBV4.jpg?size=2560x1536&quality=96&sign=81e09c9a6ca68ced7d940cd00ef93926&type=album',
     message: 'Это как Арма, только со сковородой'
   },
   {
@@ -258,7 +258,7 @@ export const questions: Question[] = [
   },
 
   {
-    name: 'Старый хуй',
+    name: 'Вредный хуй',
     type: 'text',
     content: 'Продолжи фразу',
     data: 'Ламберт, Ламберт - хер моржовый! Ламберт, Ламберт...',

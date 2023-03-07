@@ -1,9 +1,8 @@
 .about {
-  position: absolute;
-  bottom: 1rem;
+  margin-left: 2rem;
+  height: 3rem;
   padding-right: 2rem;
-
-  left: 16px;
+  position: relative;
   &:hover > .content {
     display: block;
   }
