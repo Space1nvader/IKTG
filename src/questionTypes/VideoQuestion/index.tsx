@@ -15,7 +15,7 @@ const VideoQuestion: IFC<Question> = (props) => {
     <div className={s.video}>
       {content && <QuestionTitle>{content}</QuestionTitle>}
 
-      <ReactPlayer url={video} controls width="100%" height="100%" />
+      <ReactPlayer title="video" url={video} controls width="100%" height="100%" />
     </div>
   );
 };

@@ -12,7 +12,7 @@ const AudioQuestion: IFC<Question> = (props) => {
   return (
     <div className={s.audio}>
       {content && <QuestionTitle>{content}</QuestionTitle>}
-      <ReactAudioPlayer controls src={audio} />
+      <ReactAudioPlayer title="audio" controls src={audio} />
     </div>
   );
 };
