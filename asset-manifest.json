@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/IKTG/static/css/main.78bbe8f1.css",
-    "main.js": "/IKTG/static/js/main.994aee4c.js",
+    "main.css": "/IKTG/static/css/main.0f1564c3.css",
+    "main.js": "/IKTG/static/js/main.25baa6eb.js",
     "static/media/uncharted.mp4": "/IKTG/static/media/uncharted.b8842b1c9051089b7e13.mp4",
     "static/media/laNuar.mp4": "/IKTG/static/media/laNuar.319bd1aa44fd5be4f383.mp4",
     "static/media/crysis.mp4": "/IKTG/static/media/crysis.6c4cc403b92988d41653.mp4",
@@ -18,11 +18,11 @@
     "static/media/postal2.mp3": "/IKTG/static/media/postal2.d71df6f699daf1e67422.mp3",
     "static/media/halflife2.mp3": "/IKTG/static/media/halflife2.bbc93348e67e38351a01.mp3",
     "index.html": "/IKTG/index.html",
-    "main.78bbe8f1.css.map": "/IKTG/static/css/main.78bbe8f1.css.map",
-    "main.994aee4c.js.map": "/IKTG/static/js/main.994aee4c.js.map"
+    "main.0f1564c3.css.map": "/IKTG/static/css/main.0f1564c3.css.map",
+    "main.25baa6eb.js.map": "/IKTG/static/js/main.25baa6eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.78bbe8f1.css",
-    "static/js/main.994aee4c.js"
+    "static/css/main.0f1564c3.css",
+    "static/js/main.25baa6eb.js"
   ]
 }
